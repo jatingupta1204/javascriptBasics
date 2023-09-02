@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <button onclick="
+            playGame('Heads');
+            ">Heads</button>
+        <button onclick="
+            playGame('Tails');
+        ">Tails</button>
+
+        <script>
+
+            function playGame(guess){
+                const randomNumber = Math.random();
+                const result = randomNumber < 0.5 ? 'Heads' : 'Tails';
+                console.log(guess === result ? 'You Win' : 'You Lose');
+            }
+
+        </script>
+    </body>
+</html>
